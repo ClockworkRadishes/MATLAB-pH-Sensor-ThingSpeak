@@ -21,15 +21,14 @@ To achi	eve this outcome, our group will use a pH sensor connected to a Sparkfun
 |                |                            |    |Total                       |136.70     |
 
 ## Hardware Schematic
-
+![Hardware connection diagram](/images/redboard_connection.png "Hardware Connection")
  ## Hookup Guide
 The hardware was connected in this order: ph sensor -> Vernier shield -> Sparkfun Redboard -> mini usb -> laptop. The pH sensor is the Vernier SEN -12872, which was connected to the first analog BTA input on the shield with a white BTA (British Telecom Analog) connector.  The SparkFun Vernier Interface Shield Dev-12858 ROHS was connected to the Sparkfun RedBoard DEV-13975 ROHS by positioning it above the Redboard with the pins from the shield lined up with the Redboard’s headers, where the white BTA connectors are on the bottom and the SparkFun RedBoard’s usb input connector is on the top, and finally connecting them by gently pushing down until the boards are connected as one piece.  Finally, the hardware is connected to a laptop by a mini-usb cable, in our case a red mini-B USB cable CAB-11301 ROHS that was 6-foot long connected to the Redboard’s mini- usb female connector next to the reset button on the board.
 
-Align the Vernier shield pins with those on the Arduino Redboard, and press them together firmly.
-With the Vernier sensor shield properly secured into the RedBoard, connect the pH probe to the analog 1 port.
-
-The pH probe, pictured here in its storage solution, will measure the aquarium’s water pH
-Connecting this hardware setup to a laptop running MATLAB, the pH levels are uploaded to a ThingSpeak channel
+|![](/images/hw1.png "")|![](/images/hw2.png "")|
+|Align the Vernier shield pins with those on the Arduino Redboard, and press them together firmly.|With the Vernier sensor shield properly secured into the RedBoard, connect the pH probe to the analog 1 port.|
+|![](/images/hw3.png "")|![](/images/hw4.png "")|
+|The pH probe, pictured here in its storage solution, will measure the aquarium’s water pH.|Connecting this hardware setup to a laptop running MATLAB, the pH levels are uploaded to a ThingSpeak channel.|
 
 # About The Implemented Code
 ### Arduino Code
@@ -38,11 +37,13 @@ The [insert .ino link on github here] sketch, as written by Joseph Whom, was upl
 The [insert .m link on github here] script, as written by Gunter Roehrig, is implemented through a platform using MATLAB, connected to the internet.
 # Results
 The following results from the pH sensor are based off buffer solutions of an acidic pH 5, a neutral pH 7, and a basic pH 10. This verifies the accuracy of the probe’s ability to properly measure the conditions of the aquarium’s water once put in operation. All results are taken from readings uploaded to ThingSpeak.
-pH 5 Buffer Solution
-pH 7 Buffer Solution
 
-pH 10 Buffer Solution
-
+### pH 5 Buffer Solution
+![](/images/pH_5.png "")
+### pH 7 Buffer Solution
+![](/images/pH_7.png "")
+### pH 10 Buffer Solution
+![](/images/pH_10.png "")
 # Future Work
 A question that presents itself most prominently from contributing to this IoT project, especially pertaining to the aquaponics setup, is the utility in using pH data to activate or deactivate the pump circulating water throughout the tank and supplying nutrients to the upper level of plants. If the most anticipated change in pH is the indicative increase due to an excess of waste ammonia, a weak base, the issue at hand wouldn’t be a matter of poor circulation in an aquaponics setup, but rather an effect of a fundamental imbalance in the waste cycle of the aquaponics setup. An excessive amount of ammonia in the water would either be indicative of a compromised microbial environment unable to nitrify the quantities of waste dispersed in the aquarium, or an excessive amount of waste produced by too large a population of fish. If the nitrifying bacteria are unable to digest this waste into nutrients for the plants, the concentrations of nitrites and ammonia will increase until the equilibrium is such that the fish will die and the plants will suffer. 
 
