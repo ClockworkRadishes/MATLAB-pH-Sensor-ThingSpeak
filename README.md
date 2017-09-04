@@ -25,14 +25,25 @@ To achi	eve this outcome, our group will use a pH sensor connected to a Sparkfun
  ## Hookup Guide
 The hardware was connected in this order: ph sensor -> Vernier shield -> Sparkfun Redboard -> mini usb -> laptop. The pH sensor is the Vernier SEN -12872, which was connected to the first analog BTA input on the shield with a white BTA (British Telecom Analog) connector.  The SparkFun Vernier Interface Shield Dev-12858 ROHS was connected to the Sparkfun RedBoard DEV-13975 ROHS by positioning it above the Redboard with the pins from the shield lined up with the Redboard’s headers, where the white BTA connectors are on the bottom and the SparkFun RedBoard’s usb input connector is on the top, and finally connecting them by gently pushing down until the boards are connected as one piece.  Finally, the hardware is connected to a laptop by a mini-usb cable, in our case a red mini-B USB cable CAB-11301 ROHS that was 6-foot long connected to the Redboard’s mini- usb female connector next to the reset button on the board.
 
+### Step One
+Align the Vernier shield pins with those on the Arduino Redboard, and press them together firmly.  
 ![](/images/hw1.png)
-Align the Vernier shield pins with those on the Arduino Redboard, and press them together firmly.
+
+
+### Step Two
+With the Vernier sensor shield properly secured into the RedBoard, connect the pH probe to the analog 1 port.  
 ![](/images/hw2.png)
-With the Vernier sensor shield properly secured into the RedBoard, connect the pH probe to the analog 1 port.
-![](/images/hw3.png)
+
+
+### Step Three
 The pH probe, pictured here in its storage solution, will measure the aquarium’s water pH.
-![](/images/hw4.png)
+![](/images/hw3.png)
+
+
+### Step Four
 Connecting this hardware setup to a laptop running MATLAB, the pH levels are uploaded to a ThingSpeak channel.
+![](/images/hw4.png)
+
 
 # About The Implemented Code
 ### Arduino Code
