@@ -49,7 +49,7 @@ Connecting this hardware setup to a laptop running MATLAB, the pH levels are upl
 ### Arduino Code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The [Arduino sketch](/pH_sensor_v_0.8.24.ino), as written by Joseph Whom, was uploaded onto the RedBoard via the Arduino IDE.
 ### MATLAB Code
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The [Matlab script](/.m), as written by Gunter Roehrig, is implemented through a platform using MATLAB, connected to the internet.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The [Matlab script](/ph_stable.m), as written by Gunter Roehrig, is implemented through a platform using MATLAB, connected to the internet.
 # Results
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The following results from the pH sensor are based off buffer solutions of an acidic pH 5, a neutral pH 7, and a basic pH 10. This verifies the accuracy of the probe’s ability to properly measure the conditions of the aquarium’s water once put in operation. All results are taken from readings uploaded to ThingSpeak.
 
