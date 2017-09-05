@@ -47,6 +47,13 @@ saved_data = [0 0];               % Stores the data recorded
 %   Clear the command window of user inputs to make way for counter
 clc
 
+%% ThingSpeak.com Parameters
+
+%%%%%%%%%%%%% Change based on your person ThingSpeak.com Channel %%%%%%%%%%%%%%%%%%%%%%%%%%
+ThingSpeak_channel = 'xxxxxx' %% MUST BE CHANGED TO YOUR PARTICULAR THINGSPEAK CHANNEL
+ThingSpeak_API_write_key = 'xxxxxxxxxxxxxxxx'  %% MUST BE CHANGED TO YOUR PARTICULAR THINGSPEAK.COM API Write KEY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %% Collect serial data
 bbb = 0;
 pH_mean = [];
@@ -68,7 +75,7 @@ try
             sum_of_saved_data = sum(saved_data(3:end));       % Calculate the sum of saved data
             pH_mean = (sum_of_saved_data / size_of_saved_data) - 0.1;% Calculate the mean pH levels 
             fprintf('\npH mean: %.3f\n',pH_mean)
-            thingSpeakWrite(318598,pH_mean,'WriteKey','DTOHRQOXNUCXCY9Y')   % Uploads within the loop so it will upload every 15 seconds not after you decide to finish the time inputed.
+            thingSpeakWrite(ThingSpeak_channel,pH_mean,'WriteKey',ThingSpeak_API_write_key)   % Uploads within the loop so it will upload every 15 seconds not after you decide to finish the time inputed.
         end
         pause(1)
     % count-up of seconds inline
