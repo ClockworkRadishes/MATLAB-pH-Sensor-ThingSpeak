@@ -1,7 +1,7 @@
-**Group Member Names:** Erin L McNeill, Gunter Roehrig, Adam Kennedy, Joseph Whom  
+**Group Member Names:** Engineering Students at Portland Community College  
 **Course and Quarter:** Engineering 114 Summer 2017  
 **Date:** September 5, 2017  
-**Revision:** 2  
+**Revision:** Version 2.0  
 # Problem Statement
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the artificial, closed environment of an aquaponics set-up, a healthy state of equilibrium must be established through the microbial breakdown of nitrogen-rich wastes produced by fish. This waste, processed by nitrifying bacteria, becomes accessible to plants fed by water circulated from the aquarium portion via a pump. The cycling of this pump facilitates a steady circulation of waste-rich water to the bacteria to process ammonia and dissolved nitrites, which lower the ambient concentrations of accumulated waste which become fatal in high concentrations to the fish and plants.
 
@@ -47,9 +47,9 @@ Connecting this hardware setup to a laptop running MATLAB, the pH levels are upl
 
 # About The Implemented Code
 ### Arduino Code
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The [Arduino sketch](/pH_sensor_v_0.8.24.ino), as written by Joseph Whom, was uploaded onto the RedBoard via the Arduino IDE.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The [Arduino sketch](/Arduino_Code.ino), as written by a PCC Engineering Student in ENGR114 Summer 2017, was uploaded onto the RedBoard via the Arduino IDE.
 ### MATLAB Code
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The [Matlab script](/ph_stable.m), as written by Gunter Roehrig, is implemented through a platform using MATLAB, connected to the internet.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The [Matlab script](/ph_stable.m), as written by a PCC Engineering Student in ENGR114 Summer 2017, is implemented through a platform using MATLAB, connected to the internet.
 # Results
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The following results from the pH sensor are based off buffer solutions of an acidic pH 5, a neutral pH 7, and a basic pH 10. This verifies the accuracy of the probe’s ability to properly measure the conditions of the aquarium’s water once put in operation. All results are taken from readings uploaded to ThingSpeak.
 
