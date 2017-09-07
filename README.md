@@ -50,6 +50,15 @@ Connecting this hardware setup to a laptop running MATLAB, the pH levels are upl
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The [Arduino sketch](/Arduino_Code.ino), as written by a PCC Engineering Student in ENGR114 Summer 2017, was uploaded onto the RedBoard via the Arduino IDE.
 ### MATLAB Code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The [Matlab script](/MATLAB_Code.m), as written by a PCC Engineering Student in ENGR114 Summer 2017, is implemented through a platform using MATLAB, connected to the internet.
+
+Note that in order to use this code, the ThingSpeak Channel and Write API Key need to be defined
+```MATLAB
+%%%%%%%%%%%%% Change based on your person ThingSpeak.com Channel %%%%%%%%%%%%%%%%%%%%%%%%%%
+ThingSpeak_channel = 'xxxxxx' %% MUST BE CHANGED TO YOUR PARTICULAR THINGSPEAK CHANNEL
+ThingSpeak_API_write_key = 'xxxxxxxxxxxxxxxx'  %% MUST BE CHANGED TO YOUR PARTICULAR THINGSPEAK.COM API Write KEY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+```
+
 # Results
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The following results from the pH sensor are based off buffer solutions of an acidic pH 5, a neutral pH 7, and a basic pH 10. This verifies the accuracy of the probe’s ability to properly measure the conditions of the aquarium’s water once put in operation. All results are taken from readings uploaded to ThingSpeak.
 
