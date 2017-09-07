@@ -51,7 +51,7 @@ Connecting this hardware setup to a laptop running MATLAB, the pH levels are upl
 ### MATLAB Code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The [Matlab script](/MATLAB_Code.m), as written by a PCC Engineering Student in ENGR114 Summer 2017, is implemented through a platform using MATLAB, connected to the internet.
 
-Note that in order to use this code, the ThingSpeak Channel and Write API Key need to be defined
+Note that in order to use this code, the ThingSpeak Channel and ThingSpeak Write API Key need to be defined:
 ```MATLAB
 %%%%%%%%%%%%% Change based on your person ThingSpeak.com Channel %%%%%%%%%%%%%%%%%%%%%%%%%%
 ThingSpeak_channel = 'xxxxxx' %% MUST BE CHANGED TO YOUR PARTICULAR THINGSPEAK CHANNEL
