@@ -18,7 +18,7 @@
 |Bread board     |Breadboard - Self-adhesive  |[Link](https://www.sparkfun.com/products/12002)    |Electronic circuit builder  |4.95       |
 |Bread board base|Arduino & Breadboard holder |[Link](https://www.sparkfun.com/products/11235)    |Holds breadboard & Arduino  |3.95       |
 |Mini-USB Cable  |Mini-USB cable - 6ft.       |[Link](https://www.sparkfun.com/products/11301)    |Connects Arduino to computer|3.95       |
-|                |                            |    |Total                       |136.70     |
+|                |                            |    |**Total**                       |**136.70**     |
 
 ## Hardware Schematic
 ![Hardware connection diagram](/images/redboard_connection.png "Hardware Connection")
