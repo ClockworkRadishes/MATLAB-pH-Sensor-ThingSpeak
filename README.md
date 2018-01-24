@@ -53,7 +53,7 @@ Connecting this hardware setup to a laptop running MATLAB, the pH levels are upl
 
 Note that in order to use this code, the ThingSpeak Channel and ThingSpeak Write API Key need to be defined:
 ```MATLAB
-%%%%%%%%%%%%% Change based on your person ThingSpeak.com Channel %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% Change based on your personal ThingSpeak.com Channel %%%%%%%%%%%%%%%%%%%%%%%%%%
 ThingSpeak_channel = 'xxxxxx' %% MUST BE CHANGED TO YOUR PARTICULAR THINGSPEAK CHANNEL
 ThingSpeak_API_write_key = 'xxxxxxxxxxxxxxxx'  %% MUST BE CHANGED TO YOUR PARTICULAR THINGSPEAK.COM API Write KEY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
